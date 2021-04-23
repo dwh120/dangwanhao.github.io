@@ -18,7 +18,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>关于 - Hexo</title>
+  <title>计算机科学与编程入门第二次作业 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -164,7 +164,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="关于">
+            <span class="h2" id="subtitle" title="党万豪 2000016289">
               
             </span>
 
@@ -183,67 +183,13 @@
         <div class="py-5" id="board"
           >
           
-            <div class="about-avatar">
-              <img src="/img/avatar.png" srcset="/img/loading.gif" lazyload
-                   class="img-fluid" alt="avatar">
-            </div>
-          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center">
-  <div class="about-info">
-    <div class="about-name">Fluid</div>
-    <div class="about-intro">An elegant theme for Hexo</div>
-    <div class="about-icons">
-      
-        
-        
-        
-        <a href=https://github.com class="
-           hint--bottom hint--rounded"
-           aria-label=GitHub
-           target="_blank"
-        >
-          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a href=https://douban.com class="
-           hint--bottom hint--rounded"
-           aria-label=豆瓣
-           target="_blank"
-        >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a  class="qr-trigger
-           "
-           
-           target="_self"
-        >
-          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
-          
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
-          
-        </a>
-      
-    </div>
-  </div>
-</div>
-
-<article class="about-content page-content mt-5">
-  <div class="markdown-body">
-    <h1 id="计算机科学与编程入门第二次作业"><a href="#计算机科学与编程入门第二次作业" class="headerlink" title="计算机科学与编程入门第二次作业"></a>计算机科学与编程入门第二次作业</h1><h2 id="2000016289-党万豪"><a href="#2000016289-党万豪" class="headerlink" title="2000016289 党万豪"></a>2000016289 党万豪</h2><h2 id="1-作业1"><a href="#1-作业1" class="headerlink" title="1. 作业1"></a>1. 作业1</h2><p>基于上次作业对于《追风筝的人》的人名和地名词频统计情况，本次将这些词频排序用数据可视化（柱状图、词云、饼图）的方式表现出来。首先在python中打开上次生成的地名词频统计表（一个csv文件），采用readlines将其逐行读出产生一个列表，该列表中的每个元素都是一个字符串，而我们要得到的是一个地名与词频一一对应的列表，于是对列表中的字符串进行操作，先用replace去掉其中的\n（换行符），然后用split将每一个字符串分割产生一个含有地名与相应词频的列表，然后将地名与词频按顺序分别写入word_list与count_list。</p>
+<article class="page-content">
+  <h1 id="计算机科学与编程入门第二次作业"><a href="#计算机科学与编程入门第二次作业" class="headerlink" title="计算机科学与编程入门第二次作业"></a>计算机科学与编程入门第二次作业</h1><h2 id="2000016289-党万豪"><a href="#2000016289-党万豪" class="headerlink" title="2000016289 党万豪"></a>2000016289 党万豪</h2><h2 id="1-作业1"><a href="#1-作业1" class="headerlink" title="1. 作业1"></a>1. 作业1</h2><p>基于上次作业对于《追风筝的人》的人名和地名词频统计情况，本次将这些词频排序用数据可视化（柱状图、词云、饼图）的方式表现出来。首先在python中打开上次生成的地名词频统计表（一个csv文件），采用readlines将其逐行读出产生一个列表，该列表中的每个元素都是一个字符串，而我们要得到的是一个地名与词频一一对应的列表，于是对列表中的字符串进行操作，先用replace去掉其中的\n（换行符），然后用split将每一个字符串分割产生一个含有地名与相应词频的列表，然后将地名与词频按顺序分别写入word_list与count_list。</p>
 <p>绘制柱状图采用Bar，x轴与y轴分别是word_list与count_list，将柱状图的颜色设置为绿色。为了图表美观且便于观察，采用datazoom_opts加入滑动条，并采用toolbox_opts加入工具箱，运用legend_opts设置显示图例组件，最后用render将其保存。</p>
 <p>绘制词云采用WordCloud，这里只需要对readlines的列表进行处理，将其每个元素变为一个含有地名和相应词频两个元素的列表，用word_size_range设置词云中字体的大小范围，用shape设置词云的形状为diamond（钻石），用textstyle_opts设置词云中字体为楷体，用set_globals_opts对该词云命名，最后将其保存。</p>
 <p>为了观察排名前十的地名出现的比例如何，采用Pie绘制饼图，对readlines的列表进行与词云中同样的处理，用is_clockwise设置饼图为顺时针排布，将rosetype设置为’radius’，即扇区圆心角展现数据的百分比，半径展现数据的大小，最后将饼图保存。</p>
@@ -271,7 +217,6 @@
 <p>最后，用Tab函数将上述三个图表分别命名并在写入同一个文件，并且将其保存。</p>
 <p><a target="_blank" rel="noopener" href="https://dwh120.github.io/%E7%BB%84%E5%90%88%E5%9B%BE%E8%A1%A8.html">律师行业数据组合图表</a></p>
 
-  </div>
 
   
 </article>
