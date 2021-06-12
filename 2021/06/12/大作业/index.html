@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=&quot;auto&quot;>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
 
 
@@ -201,7 +201,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10
+      11
        分钟
     </span>
   
@@ -236,7 +236,7 @@
             <div class="markdown-body">
               <h1 id="计算机科学与编程入门大作业（可视化部分）"><a href="#计算机科学与编程入门大作业（可视化部分）" class="headerlink" title="计算机科学与编程入门大作业（可视化部分）"></a>计算机科学与编程入门大作业（可视化部分）</h1><h2 id="2000016289-党万豪"><a href="#2000016289-党万豪" class="headerlink" title="2000016289 党万豪"></a>2000016289 党万豪</h2><h2 id="1-热搜流量-时间变化"><a href="#1-热搜流量-时间变化" class="headerlink" title="1. 热搜流量-时间变化"></a>1. 热搜流量-时间变化</h2><p>本次对从6.3到6.8的微博热搜榜和要闻榜进行可视化操作，我选择了每个榜单的前10名进行展示，x轴是某条热搜的实时排名（由于少部分热搜打开后网页设计与其余不同，这部分大多是广告和专区，所以我跳过了这部分，只对点开后是正常界面的热搜进行分析），y轴包括该条热搜的累计阅读量与讨论数，以此表示该条热搜的流量（热度）。</p>
 <p>借助timtline，我可以绘制出动态变化图。但是，由于在爬取数据的过程中受不稳定网速的影响，实际得到的数据可能不是等时间间隔的。为了便于分析（且与事实大致相符），我把起始时间定为6月3日22：30，时间间隔固定为5min（终止时间为起始时间后延5*1235=6175分钟），然后绘制出时间轴。</p>
-<p>可视化图表链接如下：</p>
+<p>可视化图表链接如下（但是由于文件太大，在github构建的网页中无法显示，所以请直接去web文件夹查找）：</p>
 <p><a target="_blank" rel="noopener" href="https://dwh120.github.io/%E7%83%AD%E6%90%9C-%E6%97%B6%E9%97%B4%E5%8F%98%E5%8C%96%E5%8A%A8%E6%80%81%E5%9B%BE.html">热搜-时间变化图</a></p>
 <p><a target="_blank" rel="noopener" href="https://dwh120.github.io/%E8%A6%81%E9%97%BB-%E6%97%B6%E9%97%B4%E5%8F%98%E5%8C%96%E5%8A%A8%E6%80%81%E5%9B%BE.html">要闻-时间变化图</a></p>
 <p>分别观看热搜榜和要闻榜的时间变化图，既可以得出不同时间段内热搜（要闻）的热度变化，也可以看出累计阅读量与讨论数的变化之间有一定的相关关系。暂得到以下结论：</p>
@@ -506,21 +506,6 @@
 <script  src="/js/boot.js" ></script>
 
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 <script type="text/javascript" src="/js/love.js"></script>
